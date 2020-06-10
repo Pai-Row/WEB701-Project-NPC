@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/nodemon/bin/nodemon.js src/app.js --exec",
+    "lint": "node node_modules/.bin/eslint **.*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^7.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
