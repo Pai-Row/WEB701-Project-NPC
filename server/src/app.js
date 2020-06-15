@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -17,3 +18,6 @@ sequelize.sync()
         app.listen(config.port || 8081)
         console.log(`Server started on port ${config.port}`)
     })
+=======
+console.log('hello')
+>>>>>>> parent of 778c1cb... Express added

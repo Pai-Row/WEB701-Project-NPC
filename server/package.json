@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -18,14 +19,16 @@
     "morgan": "^1.10.0",
     "sequelize": "^5.21.13",
     "sqlite3": "^3.1.8"
+=======
+    "nodemon": "^1.11.0",
+    "eslint": "^7.2.0"
+>>>>>>> parent of 778c1cb... Express added
   },
   "devDependencies": {
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "nodemon": "^1.11.0",
-    "eslint": "^7.2.0"
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
