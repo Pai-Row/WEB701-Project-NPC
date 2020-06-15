@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import AuthenticationService from '@services/AuthenticationService'
+import AuthenticationService from '@/services/AuthenticationService.js'
 export default {
   data () {
     return {
