@@ -6,13 +6,13 @@
     <v-toolbar-title>Register</v-toolbar-title>
     </v-toolbar>
   <div class = "pl-4 pr-4 pt-2 pb-2">
-  <input 
+  <input
   type="email"
   name="email"
   v-modal="email"
   placeholder="email" />
   <br>
-  <input 
+  <input
   type="password"
   name="password"
   v-modal="password"
@@ -35,8 +35,8 @@ import AuthenticationService from '@/services/AuthenticationService.js'
 export default {
   data () {
     return {
-      email:'',
-      password:'',
+      email: '',
+      password: '',
       error: null
     }
   },
