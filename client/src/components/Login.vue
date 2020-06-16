@@ -14,6 +14,7 @@
    <v-col cols="12" sm="6" md="3">
     <v-text-field
       label="Password"
+      type="password"
       v-model="password"
     ></v-text-field>
         </v-col>

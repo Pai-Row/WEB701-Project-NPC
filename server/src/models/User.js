@@ -4,8 +4,8 @@ const bcrypt = Promise.promisifyAll(require('bcrypt-nodejs'))
  function hashPassword (user, options) {
     const SALT_FACTOR = 8
 
-    if (!user.chaned('password')) {
-        return;
+    if (!user.changed('password')) {
+        return null;
     }
 
     return bcrypt
@@ -26,9 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING
     }, {
         hooks: {
-            beforeCreate: hashPassword,
-            beforeUpdate: hashPassword,
-            beforeSave: hashPassword
+            beforeSave: hashPassword,
         }
     })
 

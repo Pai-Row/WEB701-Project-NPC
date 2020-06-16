@@ -5,6 +5,7 @@
     <v-toolbar flat dense class="cyan" dark>
     <v-toolbar-title>Register</v-toolbar-title>
     </v-toolbar>
+    
  <v-col cols="12" sm="6" md="3">
     <v-text-field
       label="Email"
@@ -14,7 +15,9 @@
    <v-col cols="12" sm="6" md="3">
     <v-text-field
       label="Password"
+      type="password"
       v-model="password"
+      autocomplete='new-password'
     ></v-text-field>
         </v-col>
   <br>
