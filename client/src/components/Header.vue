@@ -32,14 +32,16 @@
 
         <v-spacer></v-spacer>
 
-            <v-tab grow light>
+            <v-tab grow light
+            v-if="!$store.state.isUserLoggedIn">
                 <router-link to="register">
                     Sign up
                 </router-link>
             </v-tab>
 
         
-            <v-tab grow light>
+            <v-tab grow light
+                v-if="!$store.state.isUserLoggedIn">
                 <router-link to="login">
                     Login
                 </router-link>
