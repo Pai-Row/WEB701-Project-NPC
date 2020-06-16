@@ -5,7 +5,7 @@ module.exports = {
         const schema = {
             email: Joi.string().email(),
             password: Joi.string().regex(
-                new RegExp('^[a-zA-Z0-9] {8,32}$')
+                new RegExp('^[a-zA-Z0-9]{8,32}$')
             )
         }
 
@@ -24,7 +24,7 @@ module.exports = {
                     <br>
                     1. It must contain ONLY the following characters: lower case, uppercase, numerics.
                     <br>
-                    2. It must be atleast 8 characters long and no greater than 32 characters long
+                    2. It must be atleast 8 characters long and no greater than 32 characters long.
                     `
                 })
                 break

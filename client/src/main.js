@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 
 Vue.config.productionTip = false
 
@@ -17,3 +18,9 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
+
+
+
+
