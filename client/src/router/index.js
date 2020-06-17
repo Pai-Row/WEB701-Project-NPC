@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Store from '@/components/Store'
+import Auction from '@/components/Auction'
 import Community from '@/components/Community'
 import Contact from '@/components/Contact'
 import Register from '@/components/Register'
@@ -17,9 +17,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Store',
-      name: 'Store',
-      component: Store
+      path: '/Auction',
+      name: 'Auction',
+      component: Auction
     },
 
     {

@@ -15,8 +15,8 @@
                 </router-link>
         </v-tab>
         <v-tab grow light>
-            <router-link to="Store">
-                    Store
+            <router-link to="Auction">
+                    Auction
                 </router-link>
         </v-tab>
         <v-tab grow light>
@@ -32,7 +32,7 @@
 
         <v-spacer></v-spacer>
 
-            <v-tab grow light
+            <v-tab
             v-if="!$store.state.isUserLoggedIn">
                 <router-link to="register">
                     Sign up
@@ -40,11 +40,18 @@
             </v-tab>
 
         
-            <v-tab grow light
+            <v-tab
                 v-if="!$store.state.isUserLoggedIn">
                 <router-link to="login">
                     Login
                 </router-link>
+            </v-tab>
+
+            <v-tab
+            v-if="$store.state.isUserLoggedIn"
+                @click='logout'>
+                    Log Out
+                
             </v-tab>
 
       
@@ -59,6 +66,15 @@
 <script>
 
 export default {
+    methods: {
+        logout() {
+            this.$store.dispatch('setToken', null)
+            this.$store.dispatch('setUser', null)
+            this.$router.push({
+                name:'Home'
+            })
+        }
+    }
 
 }
 </script>
