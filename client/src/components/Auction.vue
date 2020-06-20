@@ -1,7 +1,9 @@
 <template>
 <v-layout column>
   <v-flex xs6 offset-xs3>
-      <panel title="Auction">
+     <v-toolbar flat dense class="cyan" dark>
+    <v-toolbar-title>Auction</v-toolbar-title>
+    </v-toolbar>
         <div v-for="photos in auction"
          :key="photos.photographer">
           {{photos.photographer}}
@@ -9,7 +11,6 @@
           {{photos.price}}
           {{photos.daysRemaining}}
         </div>
-      </panel>
   </v-flex>
 </v-layout>
 </template>
@@ -18,6 +19,7 @@
 import AuctionService from '@/services/AuctionService'
 import Panel from '@/components/Panel'
 export default {
+  name: 'Auction',
   components: {
       Panel
   },
