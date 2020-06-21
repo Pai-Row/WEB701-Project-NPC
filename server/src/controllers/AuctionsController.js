@@ -9,20 +9,19 @@ module.exports = {
             res.send(auctions)
         } catch (err) {
             res.status(500).send({
-                error: 'An error has occured trying to fetch the auction information'
+                error: 'An error has occured trying to fetch the auctions'
             })
         }
     },
-    
+
     async post (req, res) {
         try {
-            const auction = await Auction.create(req,body)
+            const auction = await Auction.create(req.body)
             res.send(auction)
         } catch (err) {
             res.status(500).send({
-                error: 'An error has occured trying create the auction'
+                error: 'An error has occured trying to create the auction'
             })
         }
     }
-    
 }

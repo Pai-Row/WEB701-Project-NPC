@@ -1,13 +1,11 @@
 module.exports = (sequelize, DataTypes) => {
     const Auction = sequelize.define('Auction', {
-        photographer: DataTypes.STRING,
-        title: DataTypes.STRING,
-        price: DataTypes.DECIMAL,
-        endDate: DataTypes.STRING,
+        name: DataTypes.STRING,
         photograph: DataTypes.STRING,
-        description: DataTypes.TEXT
-   
+        photographer: DataTypes.STRING,
+        description: DataTypes.TEXT,
+        endDate: DataTypes.STRING,
+        price: DataTypes.DECIMAL,
     })
-
     return Auction
 }

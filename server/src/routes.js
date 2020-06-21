@@ -1,6 +1,6 @@
 const AuthenticationController = require('./controllers/AuthenticationController')
 const AuthenticationControllerPolicy = require('./policies/AuthenticationControllerPolicy')
-const AuctionController = require('./controllers/AuctionController')
+const AuctionsController = require('./controllers/AuctionsController')
 
 module.exports = (app) => {
     app.post('/register',
@@ -9,9 +9,9 @@ module.exports = (app) => {
     app.post('/login',
         AuthenticationController.login)
 
-    app.get('/auction',
-    AuctionController.index)
+    app.get('/auctions',
+    AuctionsController.index)
 
-    app.post('/auction',
-    AuctionController.post)
+    app.post('/auctions',
+    AuctionsController.post)
 }

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Auction from '@/components/Auction'
 import CreateAuction from '@/components/CreateAuction'
+import ViewAuction from '@/components/ViewAuction'
 import Community from '@/components/Community'
 import Contact from '@/components/Contact'
 import Register from '@/components/Register'
@@ -27,6 +28,12 @@ export default new Router({
       path: '/Auction/Create',
       name: 'Auction-Create',
       component: CreateAuction
+    },
+
+    {
+      path: '/Auction/:auctionId',
+      name: 'Auction',
+      component: ViewAuction
     },
 
     {

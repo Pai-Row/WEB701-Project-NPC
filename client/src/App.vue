@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-   
+  <div id="app"> 
       <v-img src= "https://images.unsplash.com/photo-1520390138845-fd2d229dd553?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" aspect-ratio="5.00" contain>
       </v-img>
     <page-header />
