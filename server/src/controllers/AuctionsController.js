@@ -14,6 +14,17 @@ module.exports = {
         }
     },
 
+    async show (req, res) {
+        try {
+            const auction = await Auction.findByPk(req.params.auctionId)
+            res.send(auction)
+        } catch (err) {
+            res.status(500).send({
+                error: 'An error has occured trying to fetch the auctions'
+            })
+        }
+    },
+
     async post (req, res) {
         try {
             const auction = await Auction.create(req.body)

@@ -6,6 +6,10 @@ export default {
         return Api().get('auctions')
     },
 
+    show(auctionId) {
+        return Api().get(`auctions/${auctionId}`)
+    },
+
     post (auction) {
         return Api().post('auctions', auction)
     }

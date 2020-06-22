@@ -16,19 +16,26 @@
         :key="auction.id">
 
         <v-layout>
+          
+          
+          <v-flex xs6>
+            <img class="photo-image" :src="auction.photograph" />
+              
+          </v-flex>
+
           <v-flex xs6>
             <div class="auction-title">
               {{auction.name}}
             </div>
-             <div class="auction-photograph">
+             <!-- <div class="auction-photograph">
               {{auction.photograph}}
-            </div>
+            </div> -->
              <div class="auction-photographer">
               {{auction.photographer}}
             </div>
-             <div class="auction-description">
+             <!-- <div class="auction-description">
               {{auction.description}}
-            </div>
+            </div> -->
              <div class="auction-endDate">
               {{auction.endDate}}
             </div>
@@ -45,11 +52,6 @@
             })">
             View
               </v-btn>
-              
-          </v-flex>
-
-          <v-flex xs6>
-            <img class="photo-image" :src="auction.photograph" />
           </v-flex>
         </v-layout>
 

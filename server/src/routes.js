@@ -12,6 +12,9 @@ module.exports = (app) => {
     app.get('/auctions',
     AuctionsController.index)
 
+    app.get('/auctions/:auctionId',
+    AuctionsController.show)
+
     app.post('/auctions',
     AuctionsController.post)
 }
