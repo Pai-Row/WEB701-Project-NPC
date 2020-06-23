@@ -12,7 +12,6 @@ import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loade
 Vue.config.productionTip = false
 
 Vue.use(Vuetify)
-
 sync(store, router)
 
 /* eslint-disable no-new */

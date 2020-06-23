@@ -17,20 +17,26 @@
     <v-flex xs6 class="ml-2">
             <panel title="Photograph details">
         <div class="auction-title">
-              {{auction.name}}
+              Title: {{auction.name}}
             </div>
-             <!-- <div class="auction-photograph">
-              {{auction.photograph}}
-            </div> -->
              <div class="auction-photographer">
-              {{auction.photographer}}
+              Photographer: {{auction.photographer}}
             </div>
              <div class="auction-endDate">
-              {{auction.endDate}}
+              End Date: {{auction.endDate}}
             </div>
              <div class="auction-price">
-              {{auction.price}}
+              Price: {{auction.price}}
+            </div>
+            <div class="auction-size">
+              Size: {{auction.size}}
             </div>       
+            <div class="auction-weight">
+              Weight: {{auction.weight}}
+            </div>       
+            <div class="auction-condition">
+              Condition: {{auction.condition}}
+            </div>              
     </panel>
     </v-flex>
 
@@ -76,7 +82,7 @@ font-size: 24px;
 font-size: 40px;
 }
 .photo-image {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 </style>

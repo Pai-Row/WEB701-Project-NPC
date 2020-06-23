@@ -5,7 +5,10 @@ module.exports = (sequelize, DataTypes) => {
         photographer: DataTypes.STRING,
         description: DataTypes.TEXT,
         endDate: DataTypes.STRING,
-        price: DataTypes.DECIMAL,
+        size: DataTypes.STRING,
+        weight: DataTypes.DECIMAL,
+        condition: DataTypes.STRING,
+        price: DataTypes.DECIMAL
     })
     return Auction
 }

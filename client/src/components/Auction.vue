@@ -27,15 +27,9 @@
             <div class="auction-title">
               {{auction.name}}
             </div>
-             <!-- <div class="auction-photograph">
-              {{auction.photograph}}
-            </div> -->
              <div class="auction-photographer">
               {{auction.photographer}}
             </div>
-             <!-- <div class="auction-description">
-              {{auction.description}}
-            </div> -->
              <div class="auction-endDate">
               {{auction.endDate}}
             </div>
@@ -61,6 +55,9 @@
         {{auction.description}} - 
         {{auction.endDate}} -
         {{auction.price}}
+        {{auction.size}}
+        {{auction.weight}}
+        {{auction.condition}}
       </div>
     </panel>
   </v-flex>

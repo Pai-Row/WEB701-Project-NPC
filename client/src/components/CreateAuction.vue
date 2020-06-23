@@ -13,7 +13,7 @@
                 label="Title"
                 required
                 :rules="[required]"
-                 v-model="auction.title"
+                 v-model="auction.name"
     ></v-text-field>
     <v-text-field
                 label="Price"
@@ -38,6 +38,26 @@
         </v-flex>
         <v-flex xs8>
             <panel title="Auction Structure" class="ml-2">
+                <v-text-field
+                label="Size"
+                required
+                :rules="[required]"
+                 v-model="auction.size"
+    ></v-text-field>
+    <v-text-field
+                label="Weight"
+                multi-line
+                required
+                :rules="[required]"
+                 v-model="auction.weight"
+    ></v-text-field>
+    <v-text-field
+                label="Condition"
+                multi-line
+                required
+                :rules="[required]"
+                 v-model="auction.condition"
+    ></v-text-field>
     <v-text-field
                 label="Description"
                 multi-line
@@ -71,7 +91,10 @@ export default {
             price: null,
             endDate: null,
             photograph: null,
-            description: null
+            description: null,
+            size: null,
+            weight: null,
+            condition: null,
         },
             error: null,
             required: (value) => !!value || 'Required.'
@@ -96,12 +119,12 @@ methods: {
         } catch (err) {
             console.log(err)
         }
-    },
-    components: {
-    Panel
-}
+    }
 
-}
+},
+        components: {
+        Panel
+    }
 
 }
 </script>

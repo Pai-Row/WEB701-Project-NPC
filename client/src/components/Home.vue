@@ -1,57 +1,36 @@
 <template>
   <v-layout>
-    <v-flex xs6 offset-xs3>
+    <v-flex>
       <div id="Home">
-        <h1>Welcome to the Nelson Photography Club <br>A community where you can share and grow experiences</h1>
-        <v-carousel
-            cycle
-            height="400"
-            hide-delimiter-background
-            show-arrows-on-hover
-          >
-          <v-carousel-item
-            v-for="(slide, i) in slides"
-            :key="i"
-          >
-            <v-sheet
-              :color="colors[i]"
-              height="100%"
-            >
-              <v-row
-                class="fill-height"
-                align="center"
-                justify="center"
-              >
-                <div class="display-3">{{ slide }} Slide</div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-        </v-carousel>
+        <h1 class="text-center">Welcome to the Nelson Photography Club <br>A community where you can share and grow experiences</h1>
+               <carousel>
+          <slide>
+            <v-img src= "https://images.unsplash.com/photo-1592840331052-16e15c2c6f95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" aspect-ratio="2.00" contain>
+      </v-img>
+          </slide>
+          <slide>
+            <v-img src= "https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" aspect-ratio="2.00" contain>
+      </v-img>
+          </slide>
+        </carousel>
       </div>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
 export default {
   name: 'Home',
   data () {
     return {
-      colors: [
-          'indigo',
-          'warning',
-          'pink darken-2',
-          'red lighten-1',
-          'deep-purple accent-4',
-        ],
-        slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fifth',
-        ],
+      
     }
+
+  },
+    components: {
+    Carousel,
+    Slide
 
   }
 }

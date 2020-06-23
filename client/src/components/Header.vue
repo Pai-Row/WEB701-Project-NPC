@@ -10,22 +10,27 @@
           </v-toolbar-title>
     <v-toolbar-items>
         <v-tab grow light>
-           <router-link to="Home">
+           <router-link to="/">
                     Home
                 </router-link>
         </v-tab>
         <v-tab grow light>
-            <router-link to="Auction">
+            <router-link to="/Auction">
                     Auction
                 </router-link>
         </v-tab>
         <v-tab grow light>
-            <router-link to="Community">
+            <router-link to="/Calculator">
+                    Calculator
+                </router-link>
+        </v-tab>
+        <v-tab grow light>
+            <router-link to="/Community">
                     Community
                 </router-link>
         </v-tab>
         <v-tab grow light>
-            <router-link to="Contact">
+            <router-link to="/Contact">
                     Contact
                 </router-link>
         </v-tab>
@@ -34,7 +39,7 @@
 
             <v-tab
             v-if="!$store.state.isUserLoggedIn">
-                <router-link to="register">
+                <router-link to="/register">
                     Sign up
                 </router-link>
             </v-tab>
@@ -42,7 +47,7 @@
         
             <v-tab
                 v-if="!$store.state.isUserLoggedIn">
-                <router-link to="login">
+                <router-link to="/login">
                     Login
                 </router-link>
             </v-tab>
