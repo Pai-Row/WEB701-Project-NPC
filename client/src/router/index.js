@@ -8,6 +8,7 @@ import Community from '@/components/Community'
 import Contact from '@/components/Contact'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
+import EditAccount from '@/components/EditAccount'
 import Calculator from '@/components/Calculator'
 
 Vue.use(Router)
@@ -65,6 +66,12 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+
+    {
+      path: '/EditAccount',
+      name: 'EditAccount',
+      component: EditAccount
     },
   ]
 })

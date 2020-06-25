@@ -2,7 +2,6 @@
   <v-layout>
     <v-flex>
       <div id="Home">
-        <h1 class="text-center">Welcome to the Nelson Photography Club <br>A community where you can share and grow experiences</h1>
         <br>
                <carousel>
           <slide>
@@ -42,6 +41,8 @@
       </v-img>
           </slide>
         </carousel>
+        <br>
+        <h1 class="text-center">Welcome to the Nelson Photography Club <br>A community where you can share and grow experiences</h1>
       </div>
     </v-flex>
   </v-layout>

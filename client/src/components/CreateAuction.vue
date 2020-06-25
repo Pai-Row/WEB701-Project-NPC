@@ -33,37 +33,37 @@
                 :rules="[required]"
                  v-model="auction.photograph"
     ></v-text-field>
+       <v-text-field
+                label="Description"
+                multi-line
+                required
+                :rules="[required]"
+                 v-model="auction.description"
+    ></v-text-field>
         </panel>
     </div>
         </v-flex>
         <v-flex xs8>
-            <panel title="Auction Structure" class="ml-2">
+            <panel title="Photo Specifications" class="ml-2">
                 <v-text-field
-                label="Size"
+                label="Size of Photograph(e.g 3x2)"
                 required
                 :rules="[required]"
                  v-model="auction.size"
     ></v-text-field>
     <v-text-field
-                label="Weight"
+                label="Weight(Kg)"
                 multi-line
                 required
                 :rules="[required]"
                  v-model="auction.weight"
     ></v-text-field>
     <v-text-field
-                label="Condition"
+                label="Condition(Poor, Average, Good, Supreme)"
                 multi-line
                 required
                 :rules="[required]"
                  v-model="auction.condition"
-    ></v-text-field>
-    <v-text-field
-                label="Description"
-                multi-line
-                required
-                :rules="[required]"
-                 v-model="auction.description"
     ></v-text-field>
     </panel>
     <div class="danger-alert" v-if="error">

@@ -7,6 +7,10 @@
           label="Email"
           v-model="email"
         ></v-text-field>
+         <v-text-field
+          label="Full name"
+          v-model="fullName"
+        ></v-text-field>
       </v-col>
       <v-col cols="12" sm="6" md="3">
       <v-text-field
@@ -36,6 +40,7 @@ export default {
   data () {
     return {
       email: '',
+      fullName: '',
       password: '',
       error: null
     }
@@ -45,6 +50,7 @@ export default {
       try {
       const response = await AuthenticationService.register({
         email: this.email,
+        fullName: this.fullName,
         password: this.password
       })
         this.$store.dispatch('setToken', response.data.token)

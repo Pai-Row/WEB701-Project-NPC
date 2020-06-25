@@ -52,14 +52,19 @@
                 </router-link>
             </v-tab>
 
+                        <v-tab
+            v-if="$store.state.isUserLoggedIn">
+            <router-link to="/EditAccount">  
+                    Edit Account  
+            </router-link>
+            </v-tab>
+
             <v-tab
             v-if="$store.state.isUserLoggedIn"
                 @click='logout'>
                     Log Out
                 
             </v-tab>
-
-      
     </v-toolbar-items>
 
       <v-spacer></v-spacer>

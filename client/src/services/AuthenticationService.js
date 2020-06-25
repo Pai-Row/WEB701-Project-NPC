@@ -7,6 +7,10 @@ export default {
 
     login (credentials) {
         return Api().post('login', credentials)
+    },
+
+    update (credentials) {
+        return Api().update('update', credentials)
     }
 }
 
