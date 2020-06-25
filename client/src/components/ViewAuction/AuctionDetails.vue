@@ -3,10 +3,10 @@
     <v-flex xs6>
         <panel title="Photograph">
 <v-layout>
-          <v-flex xs6>
+          <v-flex>
               <img class="photo-image" :src="auction.photograph" />
             </v-flex>
-          <v-flex xs6>
+          <v-flex>
             
               
           </v-flex>
@@ -82,7 +82,7 @@ font-size: 24px;
 font-size: 40px;
 }
 .photo-image {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 </style>

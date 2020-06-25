@@ -53,14 +53,12 @@
     ></v-text-field>
     <v-text-field
                 label="Weight(Kg)"
-                multi-line
                 required
                 :rules="[required]"
                  v-model="auction.weight"
     ></v-text-field>
     <v-text-field
                 label="Condition(Poor, Average, Good, Supreme)"
-                multi-line
                 required
                 :rules="[required]"
                  v-model="auction.condition"
@@ -87,7 +85,7 @@ export default {
         return {
         auction: {
             photographer: null,
-            title: null,
+            name: null,
             price: null,
             endDate: null,
             photograph: null,

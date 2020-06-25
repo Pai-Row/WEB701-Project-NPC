@@ -25,16 +25,16 @@
 
           <v-flex xs6>
             <div class="auction-title">
-              {{auction.name}}
+              Title: {{auction.name}}
             </div>
              <div class="auction-photographer">
-              {{auction.photographer}}
+              Photographer: {{auction.photographer}}
             </div>
              <div class="auction-endDate">
-              {{auction.endDate}}
+              Ending: {{auction.endDate}}
             </div>
              <div class="auction-price">
-              {{auction.price}}
+              Price: ${{auction.price}}
             </div>
               <v-btn
         class="cyan"

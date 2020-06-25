@@ -10,7 +10,7 @@ export default {
     },
 
     update (credentials) {
-        return Api().update('update', credentials)
+        return Api().put('user', credentials)
     }
 }
 
