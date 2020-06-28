@@ -15,7 +15,6 @@ export default {
   async mounted () {
       const auctionId = this.$store.state.route.params.auctionId
       this.auction = (await AuctionService.show(auctionId)).data
-
   },
 
   components:{

@@ -10,5 +10,12 @@ module.exports = (sequelize, DataTypes) => {
         condition: DataTypes.STRING,
         price: DataTypes.DECIMAL
     })
+
+    Auction.associate = function(models) {
+        Auction.hasMany(models.Bid, {
+            onDelete: "cascade"
+        })
+    }
+
     return Auction
 }
