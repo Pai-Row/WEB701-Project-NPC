@@ -16,14 +16,12 @@ module.exports = {
 
     async show (req, res) {
         try {
-            const auction = await Auction.findByPk(req.params.auctionId)
-            const bids = await Bid.findAll({
-                where: {
-                    AuctionId: req.params.auctionId
-                }
+            var auction = {}
+            auction = await Auction.findByPk(req.params.auctionId, {
+                include: [{
+                    model: Bid
+                }]
             })
-            auction.bids = bids
-            console.log(auction)
             res.send(auction)
         } catch (err) {
             res.status(500).send({

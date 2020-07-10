@@ -48,16 +48,6 @@
               </v-btn>
           </v-flex>
         </v-layout>
-
-        {{auction.name}} -
-        {{auction.photograph}} - 
-        {{auction.photographer}} -
-        {{auction.description}} - 
-        {{auction.endDate}} -
-        {{auction.price}}
-        {{auction.size}}
-        {{auction.weight}}
-        {{auction.condition}}
       </div>
     </panel>
   </v-flex>
@@ -107,7 +97,7 @@ font-size: 24px;
 font-size: 40px;
 }
 .photo-image {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 </style>

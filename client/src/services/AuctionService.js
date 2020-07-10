@@ -12,6 +12,10 @@ export default {
 
     post (auction) {
         return Api().post('auctions', auction)
+    },
+
+    postBid (bid) {
+        return Api().post('bid', bid)
     }
 }
 // AutheticationService.register({
